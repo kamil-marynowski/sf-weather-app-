@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New weather forecast slot{% endblock %}
+
+{% block page_title %} New weather forecast slot {% endblock %}
+
+{% block body %}
+
+    {{ include('weather_forecast_slots/_form.html.twig') }}
+
+    <a href="{{ path('app_test_crud_index') }}">back to list</a>
+{% endblock %}

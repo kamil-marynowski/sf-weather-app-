@@ -1,0 +1,32 @@
+{{ form_start(form) }}
+    <div class="row mb-3">
+        <div class="col">
+            {{ form_label(form.type_id) }}
+            {{ form_widget(form.type_id, {'attr': {'class': 'form-control'}}) }}
+            {{ form_errors(form.type_id) }}
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            {{ form_label(form.datetime) }}
+            {{ form_widget(form.datetime, {'attr': {'class': 'form-control'}}) }}
+            {{ form_errors(form.datetime) }}
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            {{ form_label(form.icon_class) }}
+            {{ form_widget(form.icon_class, {'attr': {'class': 'form-control'}}) }}
+            {{ form_errors(form.icon_class) }}
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            {{ form_label(form.temperature) }}
+            {{ form_widget(form.temperature, {'attr': {'class': 'form-control'}}) }}
+            {{ form_errors(form.temperature) }}
+        </div>
+    </div>
+
+    <button class="btn btn-success">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}
